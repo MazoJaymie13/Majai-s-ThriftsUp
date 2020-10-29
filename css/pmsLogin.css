@@ -1,0 +1,41 @@
+form{
+    text-align: center;
+    width: 300px; height:300px;
+position: absolute;
+bottom: 400px;
+right:450px;
+padding-left: 20px;
+padding-right: 20px;
+background-color:white;
+}
+
+input{
+    width: 200px; height:30px;
+    background-color: blanchedalmond;
+    border-radius: 5px;
+}
+
+.img-bg{
+    height: 100%;
+    width: 100%;
+    opacity: .75;
+    background-size: cover;
+    
+}
+
+.container{
+    font-family: Arial;
+}
+
+button{
+        height: 30px;
+        width: 220px;
+       margin-top:5px;
+       padding:5px;
+       border-radius: 5pt;
+       background-color: chocolate;
+}
+
+a{
+    font-size: 10pt;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMS System</title>
+   
+   <style>
+
+  label{
+    color: white;
+    width: 100%;
+    font-size: 30px;
+        }
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+.title{
+font-family:cursive;
+}
+
+
+
+.tab button{ 
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover{
+    background-color: #ddd;
+    /* display: block; */
+}
+
+.tab button.active{ 
+    background-color: grey;
+}
+
+
+.title{
+    background-color: darkmagenta;
+    text-align: center;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.mainform{
+    border: 1px solid grey;
+    height: 800px;
+
+    }
+
+    .s_button{
+        width:40px;
+    }
+    .categoryfrm{
+       border:1px solid lightblue; padding:5px 5px; width:200px
+    }
+    
+    .content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+</style>
+<link rel="stylesheet" 
+href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<body>      
+
+    <div class="title"> 
+       <label id ="title" for="" > 
+           Majai's ThriftUp
+        </label>
+    </div>
+
+    <div class="tab"  id="MyHeader"  > 
+                <button  class="tablinks" onmouseover="CallTab(event, 'Shop')">
+                    <i class="fas fa-shopping-cart"></i>
+                     Shop</button>
+                <button class="tablinks" onmouseover="CallTab(event, 'Sell')">
+                    <i  class="fa fa-money-bill-alt" ></i> Sell</button>               
+    </div>
+
+
+    <div id="Shop" class="tabcontent">
+        <div class="tab">
+        <button>Women's Clothes</button>
+        <button>Baby's Clothes</button>
+        <button>Men's Clothes</button>
+        <button>Gadgets</button>
+        <button>Furnitures</button>
+        <button>Handbags</button>
+        <button>Shoes</button>
+        <button>Accessories</button>
+        <button>School Supplies</button>
+        </div>
+    </div>
+
+    <div id ="Sell" class="tabcontent">
+        <div class="tab">
+            <button>Payouts</button>
+            <button>Cash </button>
+        </div>
+    </div>
+ 
+    <div class="content">
+        <form  class="categoryfrm">
+            <h4 >Category</h4> 
+            <input type="radio" name="w_category" >Pants <br>
+            <input type="radio" name="w_category" >Skirts    <br>
+            <input type="radio" name="w_category" > Sando <br>
+            <input type="radio" name="w_category" >Tshirts  <br>
+            <input type="radio" name="w_category" >Coats  <br>
+            <input type="radio" name="w_category" >Jackets <br>
+            <input type="radio" name="w_category" >Sweaters    <br>
+            <input type="radio" name="w_category" > Shorts <br>
+            <input type="radio" name="w_category" >Sports Wear  <br>
+            <input type="radio" name="w_category" >Swim Wear  <br>
+            <input type="radio" name="w_category" >Tops  <br>
+            <input type="radio" name="w_category" >Dresses  <br>
+  
+
+            <h4 >Sizes</h4> 
+         
+           <button class="s_button">XXS</button>
+           <button  class="s_button">XS</button>
+           <button  class="s_button">SM</button>
+           <button  class="s_button">MED</button>
+
+            <div style ="margin:2px 0px">
+                <button  class="s_button">LG</button>
+                <button  class="s_button">XL</button>
+                <button  class="s_button">XXL</button>
+                <button  class="s_button">OL</button>
+            </div>
+
+            <div style ="margin:2px 0px">
+                <button  class="s_button">1X</button>
+                <button  class="s_button">2X</button>
+                <button  class="s_button">3X</button>
+                <button  class="s_button">4X</button>
+            </div>
+
+      
+                <h4 >Brands</h4> 
+                <input type="checkbox" name="Forever21" >Forever 21 <br>
+                <input type="checkbox" name="Penshoppe" >Penshoppe    <br>
+                <input type="checkbox" name="Bread" > Bread 'n Butter <br>
+                <input type="checkbox" name="Levis" > Levis <br>
+                <input type="checkbox" name="BananaRep" >Banana Republic  <br>
+                <input type="checkbox" name="Jags" >Jags <br>
+                <input type="checkbox" name="RRj" >RRJ <br>
+                
+                <h4 >Brands</h4> 
+                <input type="checkbox" name="Forever21" >Forever 21 <br>
+                <input type="checkbox" name="Penshoppe" >Penshoppe    <br>
+                <input type="checkbox" name="Bread" > Bread 'n Butter <br>
+                <input type="checkbox" name="Levis" > Levis <br>
+                <input type="checkbox" name="BananaRep" >Banana Republic  <br>
+                <input type="checkbox" name="Jags" >Jags <br>
+                <input type="checkbox" name="RRj" >RRJ <br>
+                <input type="checkbox" name="Forever21" >Forever 21 <br>
+                <input type="checkbox" name="Penshoppe" >Penshoppe    <br>
+                <input type="checkbox" name="Bread" > Bread 'n Butter <br>
+                <input type="checkbox" name="Levis" > Levis <br>
+                <input type="checkbox" name="BananaRep" >Banana Republic  <br>
+                <input type="checkbox" name="Jags" >Jags <br>
+                <input type="checkbox" name="RRj" >RRJ <br>
+                <input type="checkbox" name="Forever21" >Forever 21 <br>
+                <input type="checkbox" name="Penshoppe" >Penshoppe    <br>
+                <input type="checkbox" name="Bread" > Bread 'n Butter <br>
+                <input type="checkbox" name="Levis" > Levis <br>
+                <input type="checkbox" name="BananaRep" >Banana Republic  <br>
+                <input type="checkbox" name="Jags" >Jags <br>
+                <input type="checkbox" name="RRj" >RRJ <br>
+                <input type="checkbox" name="Forever21" >Forever 21 <br>
+                <input type="checkbox" name="Penshoppe" >Penshoppe    <br>
+                <input type="checkbox" name="Bread" > Bread 'n Butter <br>
+                <input type="checkbox" name="Levis" > Levis <br>
+                <input type="checkbox" name="BananaRep" >Banana Republic  <br>
+                <input type="checkbox" name="Jags" >Jags <br>
+                <input type="checkbox" name="RRj" >RRJ <br>
+        
+           
+        </form>
+    </div>
+
+
+<script>
+
+window.onscroll = function() {myFunction()} ;
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+console.log (sticky);
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    console.log('add')
+  } else {
+    header.classList.remove("sticky");
+    console.log('remove')
+  }
+}
+
+
+        function CallTab(evt,tabname) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabname).style.display = "block";
+        evt.currentTarget.className += " active";
+        }  
+
+        // window.onscroll=function(){myfunction()};
+
+        // var header =document.getElementById("MyHeader");
+        // var sticky=header.offsetTop;
+
+        // function myfunction(){
+        //     if(window.pageyOffset  >sticky) {
+        //         header.classList.add("sticky")
+        //     }
+        //     else{
+        //         header.classList.remove("sticky")
+        //     }
+        // }
+
+
+        
+        </script>
+</body>
+</html>

@@ -1,11 +1,78 @@
 
 
-h1{
-	color:blue;
-	
-	
+label{
+    color: white;
+    width: 100%;
+    font-size: 30px;
+        }
+
+.tab {
+  overflow: hidden;
+
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
 }
 
-h3{
-	color:red;
+
+.tab button{ 
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 16px;
+    transition: 0.3s;
+    font-size: 17px;
 }
+
+.tab button:hover{
+    background-color: #ddd;
+    /* display: block; */
+}
+
+.tab button.active{ 
+    background-color: grey;
+}
+
+
+.header{
+    background-color: darkmagenta;
+    text-align: center;
+    font-family:cursive;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.mainform{
+    border: 1px solid grey;
+    height: 800px;
+
+    }
+
+    .s_button{
+        width:40px;
+    }
+    .categoryfrm{
+       border:1px solid lightblue; padding:5px 5px; width:200px
+    }
+    
+    .content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+

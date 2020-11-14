@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Majai Thriftup System</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <link rel="stylesheet" href="../../bootstrap4/dist/css/bootstrap.min.css"></link>
     <link rel="stylesheet" 
-    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></link>
 
+<style>
 
+}
+</style>
 </head>
-
 <body onload="showContent('cat_women')">   
-
     <div id="myHeader">
         <div  class="header">
         <label > Majai's ThriftUp</label>
         </div>
-
+ 
     <div class="tab"  > 
                 <button  class="tablinks" onmouseover="CallTab(event, 'Shop')">
                 <i class="fas fa-shopping-cart"></i>
@@ -26,9 +28,7 @@
                 <i  class="fa fa-money-bill-alt" ></i> Sell</button>               
     </div>
     <div>
-    <!-- <iframe  src="baby.php" >
-      
-      </iframe> -->
+
 
     <div id="Shop" class="tabcontent">
         <div class="tab">
@@ -99,17 +99,18 @@
         </form>
     </div>
 
-
-    <div id="cat_baby"  class="content">
-            <form class="categoryfrm"  > 
-                <h4>Babies Age</h4>
-                <input type="radio" name="baby" >Pants <br>
-                <input type="radio" name="baby" >Sando <br>
-                <input type="radio" name="baby" >Tshirts  <br>
-            </form>
+    <div id="cat_baby"  class="content" cols=6 style="display:table">
+                    <form class="categoryfrm"   > 
+                        <h4>Babies Age</h4>
+                        <input type="radio" name="baby" >Pants <br>
+                        <input type="radio" name="baby" >Sando <br>
+                        <input type="radio" name="baby" >Tshirts  <br>
+                    </form>
+                 <div class="clrfix" style="margin-left: 300px " id="baby_images"></div>
     </div>
  
-    <div  id="cat_men" class="content">
+
+    <div   id="cat_men" class="content">
         <form class="categoryfrm" >
             <h4>Category</h4>
             <input type="radio" name="men" >Pants <br>
@@ -156,8 +157,6 @@
             <input type="radio" name="Furniture" >Organizer<br>
         </form>
     </div>
-
-
     
     <div  id="cat_bags" class="content">
         <form class="categoryfrm" >
@@ -168,7 +167,7 @@
             <input type="radio" name="bags" >Desk<br>
             <input type="radio" name="bags" >Mattresses<br>
             <input type="radio" name="bags" >Bedroom Dresser<br>
-            <input type="radio" name="bags" >Tv Stands<br>
+            <input type="radio" name="bags" >   Tv Stands<br>
             <input type="radio" name="bags" >Coffee Table<br>
             <input type="radio" name="bags" >Organizer<br>
         </form>
@@ -218,7 +217,9 @@
     </div>
 
 </div>
-
+<script src="../../jquery/dist/jquery.min.js"></script>
+<script href="../../bootstrap4/dist/js/bootstrap.min.js"></script>
+<script src="js/myscript.js"></script>
 <script>
 // sticky Headers
 window.onscroll = function() {myFunction()};

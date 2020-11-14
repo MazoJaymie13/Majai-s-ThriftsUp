@@ -27,7 +27,6 @@ label{
 
 .tab button:hover{
     background-color: #ddd;
-    /* display: block; */
 }
 
 .tab button.active{ 

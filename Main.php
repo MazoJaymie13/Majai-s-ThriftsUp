@@ -100,13 +100,21 @@
     </div>
 
     <div id="cat_baby"  class="content" cols=6 style="display:table">
-                    <form class="categoryfrm"   > 
-                        <h4>Babies Age</h4>
-                        <input type="radio" name="baby" >Pants <br>
-                        <input type="radio" name="baby" >Sando <br>
-                        <input type="radio" name="baby" >Tshirts  <br>
-                    </form>
-                 <div class="clrfix" style="margin-left: 300px " id="baby_images"></div>
+        <div class="row">
+            <div class="col-sm-3">
+                
+                <form class="categoryfrm"   > 
+                    <h4>Babies Age</h4>
+                    <input type="radio" name="baby" >Pants <br>
+                    <input type="radio" name="baby" >Sando <br>
+                    <input type="radio" name="baby" >Tshirts  <br>
+                </form>
+            </div>
+            <div class="col-sm-9">
+                <div class="clrfix ml-3" id="baby_images"></div>
+            </div>
+        </div>
+                
     </div>
  
 
